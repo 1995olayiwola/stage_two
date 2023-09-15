@@ -1,6 +1,7 @@
 import React from 'react';
 import {Container,Row,Col,Card} from 'react-bootstrap';
 import Navbar from './Components/Navbar';
+import './App.css'
 
 const App = () => {
   const [movie,setMovie]=React.useState({});
@@ -17,15 +18,15 @@ const App = () => {
   },[])
   console.log(movie)
   return (
-    <div>
+    <div >
       <Navbar/>
-      <container>
+      <container style={{margin:'20px', display:'flex',justifyContent:'center', alignItems:'center'}}>
         <Row>
         {
         movie?.results?.map((item,index)=>{
           return(
           <Col xs={12} sm={4} md={4} key={index}>
-            <card>
+            <card data-testid='movie-card'>
             <Card.Img src={`https://image.tmdb.org/t/p/w500/${item.poster_path
     }`} data-testid="movie-poster"/>
               <Card.Body>

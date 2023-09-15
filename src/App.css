@@ -2,7 +2,9 @@ body{
   background: #000032;
   color: #ffffff;
 }
-.container{
-  
-  margin: 20px;
+
+.navbar-with-bg{
+  background-image:url('https://image.tmdb.org/t/p/w500//hek3koDUyRQk7FIhPXsa6mT2Zc3.jpg');
+background-size:cover;
+height:100vh;
 }

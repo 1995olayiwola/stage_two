@@ -1,0 +1,3 @@
+I fetch the movie api inside app.js and the navbar shows the search query
+step 1: I created state which keep track of the api and I fetch the movie api using the api provided by themoviedb.
+step2: I created a form in the navbar which shows the queries.
