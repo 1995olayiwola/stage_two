@@ -4,7 +4,8 @@ const search = 'https://api.themoviedb.org/3/search/movie?query=Jack+Reacher&api
 
 const MovieList = ({poster_path,release_date,title,overview
 ,popularity
-}) => {
+}) =>{
+
   return (
     <div>MovieList</div>
   )
